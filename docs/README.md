@@ -10,17 +10,13 @@ Hello, my name is Kelanu.
 
 ## Contact
 
--5103883439
--kelanucr at g dot ucla dot edu
+- 5103883439
+- kelanucr at g dot ucla dot edu
 
-## Menu
+## Other Things
 
-Some info on how to make a site like this and how it works.
 
-- [About](about.md)
-- [Features](features.md)
-- [Limitations](limitations.md)
-- [What about a Wiki?](wiki.md)
+- [Radar](radar.md)
 
 
 ## Source
