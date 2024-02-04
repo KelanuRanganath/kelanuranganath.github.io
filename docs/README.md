@@ -14,7 +14,7 @@ Hello, my name is Kelanu.
 
 ## Other Things
 
-- [Mel's Math Musings]([https://mealaud.com](https://mealaud.github.io/))
+- [Mel's Math Musings](https://mealaud.github.io/)
 - [Radar](radar.md)
 - [Wireless Communication](wireless.md)
 - [Cooking](cooking.md)
