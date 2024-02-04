@@ -16,6 +16,9 @@ Hello, my name is Kelanu.
 
 
 - [Radar](radar.md)
+- [Wireless Communication](wireless.md)
+- [Cooking](cooking.md)
+- [Touching Grass](grass.md)
 
 
 ## Credit
