@@ -4,8 +4,8 @@ Hello, my name is Kelanu.
 ## Work
 
 - UCLA Class of 2025 B.S. Physics
-- Engineering Intern at Lumitron Technologies from 2021-Present
-- Engineer at Bruin Spacecraft Group
+- Opto-Mechanical Engineering Intern at Lumitron Technologies from 2021-Present
+- Communications Engineer at Bruin Spacecraft Group from 2023-Present
 
 ## Contact
 
