@@ -1,6 +1,4 @@
----
-permalink: /
----
+
 ## About
 Hello, my name is Kelanu.
 
