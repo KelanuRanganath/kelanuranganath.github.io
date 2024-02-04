@@ -1,33 +1,19 @@
 ---
 permalink: /
 ---
-# **Documentation**
-> How this project works and how to maintain your own
-
-<div align="center">
-    <a href="https://github.com/MichaelCurrin/gh-pages-no-jekyll/generate">
-        <img src="https://img.shields.io/badge/Use_this_template-Generate-2ea44f?style=for-the-badge" alt="Use this template">
-    </a>
-</div>
-
-
 ## About
+Hello, my name is Kelanu.
 
-This project is built around using markdown content to make a website. 
+## Work
 
-This is great for non-developers to work on. No experience with Ruby, Jekyll, Liquid, HTML or CSS required. Those are all used internally, but you don't need to worry about that.
+- UCLA Class of 2025 B.S. Physics
+- Engineering Intern at Lumitron Technologies from 2021-Present
+- Engineer at Bruin Spacecraft Group
 
-This repo is super light. No config needed. You don't need to setup a theme or a layout. GitHub will figure that out and will apply its standard theme to your GitHub Pages site. So will it will have a clean, white, mobile-friendly site with a heading. The limitations are covered more on these pages, such as lack of a navbar. But you can still setup links to pages, as with the Menu below.
+## Contact
 
-The page you are currently viewing is `README.md` in the docs directory, with path set as `/` in the frontmatter. Alternatively, you can add `index.md` or `index.html` as your homepage. I just like how a README.md previews well in GitHub.
-
-
-## How to use this project
-
-- Template for a new project or docs site. Or use as a reference for existing projects.
-- Read the tutorial content under template notes.
-- View this live demo site.
-
+-5103883439
+-kelanucr at g dot ucla dot edu
 
 ## Menu
 
@@ -41,7 +27,7 @@ Some info on how to make a site like this and how it works.
 
 ## Source
 
-View source on GitHub:
+This page was built using Machael Currin's template
 
 [![MichaelCurrin - gh-pages-no-jekyll](https://img.shields.io/static/v1?label=MichaelCurrin&message=gh-pages-no-jekyll&color=blue&logo=github)](https://github.com/MichaelCurrin/gh-pages-no-jekyll)
 
