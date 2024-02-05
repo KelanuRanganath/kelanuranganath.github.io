@@ -10,6 +10,16 @@ Over the past two years I've learned that UCLA has a long history of buildering.
 ##### Ackerman Union, The Wall (5.10)
 This climb still exists
 
+<div align="center">
+    <a href="https://michaelcurrin.github.io/gh-pages-no-jekyll/">
+        <img src="/thewall.png" alt="The Wall" title="The Wall" width="350" />
+    </a>
+</div>
+
+<br>
+
+<div align="center">
+
 ### Slacklining
 I have recently switched to using 100m of 1" BC Blue with a primitave tension setup.
 My current goal is 30m [Chongo](http://www.chongonation.com/) sit start.
