@@ -17,7 +17,7 @@ Hello, my name is Kelanu.
 - [Mel's Math Musings](https://mealaud.github.io/)
 - [Radar](radar.md)
 - [Wireless Communication](wireless.md)
-- [Cooking](cooking.md)
+- [Teardowns and Repairs](repairs.md)
 - [Touching Grass](grass.md)
 
 
