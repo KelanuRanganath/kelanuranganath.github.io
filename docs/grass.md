@@ -11,8 +11,8 @@ My current goal is 30m [Chongo](http://www.chongonation.com/) sit start.
 ### Snowboarding
 Yep, it's pretty fun.
 
-### Math
-
+### Biking
+I have a bike. I like to bike when I can't climb. My current goal is to improve my 20 mile time. Maybe I'll get Strava in the future.
 
 ### Music
 I play the piano and I'm modifying a Nektar GX61 into a keytar; I'll post the files here when I'm done.
