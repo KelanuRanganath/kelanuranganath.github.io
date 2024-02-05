@@ -5,7 +5,8 @@ I broke the tension cable in my wrist in June of 2023, it has recently healed, I
 My home gym is the rock wall at Wooden.
 
 ### Slacklining
-I have recently switched to using 100m of BC Blue with a primitave tension setup.
+I have recently switched to using 100m of 1" BC Blue with a primitave tension setup.
+My current goal is 30m [Chongo](http://www.chongonation.com/) sit start.
 
 ### Snowboarding
 Yep, it's pretty fun.
