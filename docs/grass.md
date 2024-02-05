@@ -11,8 +11,8 @@ Over the past two years I've learned that UCLA has a long history of buildering.
 This climb still exists
 
 <div align="center">
-    <a href="https://michaelcurrin.github.io/gh-pages-no-jekyll/">
-        <img src="/images/Ackerman.png" alt="The Wall" title="The Wall" width="350" />
+    <a>
+        <img src="images/Ackerman.png" alt="The Wall" title="The Wall" width="350" />
     </a>
 </div>
 
