@@ -12,7 +12,7 @@ This climb still exists
 
 <div align="center">
     <a href="https://michaelcurrin.github.io/gh-pages-no-jekyll/">
-        <img src="/thewall.png" alt="The Wall" title="The Wall" width="350" />
+        <img src="/images/Ackerman.png" alt="The Wall" title="The Wall" width="350" />
     </a>
 </div>
 
