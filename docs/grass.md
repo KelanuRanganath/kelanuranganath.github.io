@@ -44,7 +44,10 @@ Once a month I make a collaborative Spotify playlist and try to invite as many p
 - [June](https://open.spotify.com/playlist/7M2aAeIqtPgRmFiJLKnRdb?si=bd6b1022f0d44a68)
 - [July](https://open.spotify.com/playlist/65cHXMsdGiHllDfmkC8eEI?si=dbc4bca8d06740de)
 - [August](https://open.spotify.com/playlist/1rbFLBTDJoJY27FrGTp5On?si=9e791925c18a49f9)
+- [September](https://open.spotify.com/playlist/2kSmSWuG7SI4OfS9dQKWrx?si=4dd03b1f63fd46ff)
+- [October](https://open.spotify.com/playlist/7mUhKoJbBWj6KtrwQS79y2?si=1cf48c02f8f24c83)
 - [November](https://open.spotify.com/playlist/7uKvCV4A79Xk1ImkN7r57U?si=cba1bf2b521c45c6)
+- [December](https://open.spotify.com/playlist/7zYLTyu6zxO5KM4huL3pLm?si=56ac993070254438)
 
 #### 2024
 - [January](https://open.spotify.com/playlist/2M0jt6lSzlCYbgTIEuMllP?si=37273854bfb74e17)
