@@ -11,6 +11,9 @@ My current goal is 30m [Chongo](http://www.chongonation.com/) sit start.
 ### Snowboarding
 Yep, it's pretty fun.
 
+### Math
+
+
 ### Music
 I play the piano and I'm modifying a Nektar GX61 into a keytar; I'll post the files here when I'm done.
 
