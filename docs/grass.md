@@ -18,7 +18,7 @@ This climb still exists
 
 <br>
 
-<div align="center">
+</div align="center">
 
 ### Slacklining
 I have recently switched to using 100m of 1" BC Blue with a primitave tension setup.
