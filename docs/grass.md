@@ -15,11 +15,11 @@ I play the piano and I'm modifying a Nektar GX61 into a keytar.
 
 Once a month I make a collaborative Spotify playlist and try to invite as many people to add whatever they're listening to that month.
 #### 2021
-- August: (https://open.spotify.com/playlist/61X1FJYGIJ9BGE7FELHrad?si=15f2473afdb446b2)
-- September: (https://open.spotify.com/playlist/0tJlkLMq66Y7lUwsccd8Yb?si=2507b96697ab4cdd)
-- October: (https://open.spotify.com/playlist/12vEEdoceptEomSndSqyBV?si=45f74912f5a74aa5)
-- November: (https://open.spotify.com/playlist/2xMuvlok1UcbtGWl4bmtsR?si=ad6a3e9b1ca84757)
-- December: (https://open.spotify.com/playlist/7hzYOzgjFvRybattd3XIaM?si=f396c046d6ca4337)
+- [August] (https://open.spotify.com/playlist/61X1FJYGIJ9BGE7FELHrad?si=15f2473afdb446b2)
+- [September] (https://open.spotify.com/playlist/0tJlkLMq66Y7lUwsccd8Yb?si=2507b96697ab4cdd)
+- [October] (https://open.spotify.com/playlist/12vEEdoceptEomSndSqyBV?si=45f74912f5a74aa5)
+- [November] (https://open.spotify.com/playlist/2xMuvlok1UcbtGWl4bmtsR?si=ad6a3e9b1ca84757)
+- [December] (https://open.spotify.com/playlist/7hzYOzgjFvRybattd3XIaM?si=f396c046d6ca4337)
 
 #### 2022
 - [January] (https://open.spotify.com/playlist/4LMl4GzcgVra5YA01TqFj3?si=8309cbfccd074ae0)
