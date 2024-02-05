@@ -11,7 +11,7 @@ I have recently switched to using 100m of BC Blue with a primitave tension setup
 Yep, it's pretty fun.
 
 ### Music
-I play the piano and I'm modifying a Nektar GX61 into a keytar.
+I play the piano and I'm modifying a Nektar GX61 into a keytar; I'll post the files here when I'm done.
 
 Once a month I make a collaborative Spotify playlist and try to invite as many people to add whatever they're listening to that month.
 #### 2021
