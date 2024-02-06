@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/primer/12.0.0/build.css" crossorigin="anonymous">
     <script>
       window.MathJax = {
         tex: {
@@ -33,6 +34,7 @@
       .then(response => response.text())
       .then(text => {
         var htmlContent = converter.makeHtml(text);
+        console.log(htmlContent); // This should output the converted HTML
         document.getElementById('markdownContent').innerHTML = '<div class="markdown-body">' + htmlContent + '</div>';
         // Optionally, trigger MathJax to reprocess the document if you have LaTeX in your Markdown
         if (window.MathJax) {
