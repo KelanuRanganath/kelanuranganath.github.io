@@ -66,9 +66,66 @@ This climb still exists
 </div>
 
 <br>
+<div align="center">
+    <a>
+        <img src="images/Physical Graffiti.png" alt="The Wall" title="The Wall" width="350" />
+    </a>
+</div>
+
+<br>
+<div align="center">
+    <a>
+        <img src="images/The Gorilla.png" alt="The Wall" title="The Wall" width="350" />
+    </a>
+</div>
+
+<br>
+<div align="center">
+    <a>
+        <img src="images/fowler1.png" alt="The Wall" title="The Wall" width="350" />
+    </a>
+</div>
+
+<br>
+<div align="center">
+    <a>
+        <img src="images/franz2.JPG" alt="The Wall" title="The Wall" width="350" />
+    </a>
+</div>
+
+<br>
+<div align="center">
+    <a>
+        <img src="images/powell1.JPG" alt="The Wall" title="The Wall" width="350" />
+    </a>
+</div>
+
+<br>
+<div align="center">
+    <a>
+        <img src="images/roger.JPG" alt="The Wall" title="The Wall" width="350" />
+    </a>
+</div>
+
+<br>
+<div align="center">
+    <a>
+        <img src="images/timmy.PNG" alt="The Wall" title="The Wall" width="350" />
+    </a>
+</div>
+
+<br>
+
 ### Slacklining
 I have recently switched to using 100m of 1" BC Blue with a primitave tension setup.
 My current goal is 30m [Chongo](http://www.chongonation.com/) sit start.
+<div align="center">
+    <a>
+        <img src="images/Slack.PNG" alt="The Wall" title="The Wall" width="350" />
+    </a>
+</div>
+
+<br>
 
 ### Snowboarding
 Yep, it's pretty fun.
