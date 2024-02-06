@@ -1,5 +1,6 @@
-## Quantum Mechanics
+# Quantum Mechanics
 
-### Fundamentals
-#### Bra Ket Notation
-Distinct physical states are represented as basis vectors of a vector space over the field of complex numbers. Vectors in this vector space are called state vectors and are represented as kets $\\ket{\alpha}$.
+## Fundamentals
+### Bra Ket Notation
+#### Definition: State Vector
+Let $\\mathcal{H}(\mathcal{H})$ be a Hilbert space
