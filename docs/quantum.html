@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Your Website Title</title>
     <script type="text/javascript" async
         src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
     </script>
-    <script type="text/javascript" src="mathjax-config.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css/github-markdown.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js/styles/github.min.css">
 </head>
 <body>
-    <div id="markdown-content"></div>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/marked/2.0.1/marked.min.js"></script>
-  <script type="text/javascript">
-      // Fetch and render your markdown content here
-      fetch('quantum.md')
-          .then(response => response.text())
-          .then(content => {
-              const markdownContent = document.getElementById('markdown-content');
-              markdownContent.innerHTML = marked(content);
-          });
-  </script>
+    <article class="markdown-body">
+        <div id="markdown-content"></div>
+    </article>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/marked/2.0.1/marked.min.js"></script>
+    <script type="text/javascript">
+        fetch('quantum.md')
+            .then(response => response.text())
+            .then(content => {
+                const markdownContent = document.getElementById('markdown-content');
+                markdownContent.innerHTML = marked(content);
+            });
+    </script>
+
 </body>
 </html>
