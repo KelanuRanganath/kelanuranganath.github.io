@@ -17,9 +17,55 @@ This climb still exists
 </div>
 
 <br>
+<div align="center">
+    <a>
+        <img src="images/Ackerman Union.png" alt="The Wall" title="The Wall" width="350" />
+    </a>
+</div>
 
-</div align="center">
+<br>
+<div align="center">
+    <a>
+        <img src="images/English High Step.png" alt="The Wall" title="The Wall" width="350" />
+    </a>
+</div>
 
+<br>
+<div align="center">
+    <a>
+        <img src="images/Geology.png" alt="The Wall" title="The Wall" width="350" />
+    </a>
+</div>
+
+<br>
+<div align="center">
+    <a>
+        <img src="images/IMG_20220512_180134499.jpg" alt="The Wall" title="The Wall" width="350" />
+    </a>
+</div>
+
+<br>
+<div align="center">
+    <a>
+        <img src="images/IMG_3033.JPG" alt="The Wall" title="The Wall" width="350" />
+    </a>
+</div>
+
+<br>
+<div align="center">
+    <a>
+        <img src="images/IMG_3127.jpg" alt="The Wall" title="The Wall" width="350" />
+    </a>
+</div>
+
+<br>
+<div align="center">
+    <a>
+        <img src="images/IMG_3165.jpg" alt="The Wall" title="The Wall" width="350" />
+    </a>
+</div>
+
+<br>
 ### Slacklining
 I have recently switched to using 100m of 1" BC Blue with a primitave tension setup.
 My current goal is 30m [Chongo](http://www.chongonation.com/) sit start.
