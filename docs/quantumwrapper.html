@@ -24,7 +24,7 @@
     <script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
 </head>
 <body>
-<div id="markdownContent" class="container-lg px-3 my-5 markdown-body"></div>
+<div id="markdownContent"></div>
 <script>
     window.onload = function() {
         var converter = new showdown.Converter(),
@@ -35,7 +35,8 @@
             return response.text();
         }).then(function(text) {
             var html = converter.makeHtml(text);
-            document.getElementById('markdownContent').innerHTML = html;
+            document.getElementById('markdownContent').innerHTML = '<div class="markdown-body">' + convertedHtmlContent + '</div>';
+
             
             // Ask MathJax to typeset the newly added content
             MathJax.typesetPromise().then(() => {
