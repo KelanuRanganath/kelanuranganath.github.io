@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/primer/12.0.0/build.css" integrity="sha256-/4QkWe6HUR.oTx4ri5y9BQJ0Mm8bn5LwlCkOlJmGKcI=" crossorigin="anonymous">
-
     <script>
       window.MathJax = {
         tex: {
@@ -25,27 +23,26 @@
 </head>
 <body>
 <div id="markdownContent"></div>
+<script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
 <script>
-    window.onload = function() {
-        var converter = new showdown.Converter(),
-            path = 'quantum.md'; // Update this path
-        
-        // Fetch and convert the Markdown file
-        fetch(path).then(function(response) {
-            return response.text();
-        }).then(function(text) {
-            var html = converter.makeHtml(text);
-            document.getElementById('markdownContent').innerHTML = '<div class="markdown-body">' + htmlContent + '</div>';
-            
-            // Ask MathJax to typeset the newly added content
-            MathJax.typesetPromise().then(() => {
-                console.log("MathJax processing complete.");
-            }).catch((err) => console.error("MathJax processing error:", err));
-        }).catch(function(err) {
-            console.warn('Error fetching markdown file:', err);
-        });
-    };
+  window.onload = function() {
+    var converter = new showdown.Converter();
+    var markdownContentPath = 'quantum.md'; // Update this path
+    
+    fetch(markdownContentPath)
+      .then(response => response.text())
+      .then(text => {
+        var htmlContent = converter.makeHtml(text);
+        document.getElementById('markdownContent').innerHTML = '<div class="markdown-body">' + htmlContent + '</div>';
+        // Optionally, trigger MathJax to reprocess the document if you have LaTeX in your Markdown
+        if (window.MathJax) {
+          MathJax.typesetPromise();
+        }
+      })
+      .catch(err => console.error('Failed to load Markdown file:', err));
+  };
 </script>
+
 
 </body>
 </html>
