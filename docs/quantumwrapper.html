@@ -10,19 +10,24 @@
 <script>
     window.onload = function() {
         var converter = new showdown.Converter(),
-            path = 'quantum.md',
-            fetchFile = function(filePath) {
-                fetch(filePath).then(function(response) {
-                    return response.text();
-                }).then(function(text) {
-                    document.getElementById('markdownContent').innerHTML = converter.makeHtml(text);
-                }).catch(function(err) {
-                    console.warn('Error fetching markdown file:', err);
-                });
-            };
-
-        fetchFile(path);
+            path = 'quantum.md'; // Update this path
+        
+        // Fetch and convert the Markdown file
+        fetch(path).then(function(response) {
+            return response.text();
+        }).then(function(text) {
+            var html = converter.makeHtml(text);
+            document.getElementById('markdownContent').innerHTML = html;
+            
+            // Ask MathJax to typeset the newly added content
+            MathJax.typesetPromise().then(() => {
+                console.log("MathJax processing complete.");
+            }).catch((err) => console.error("MathJax processing error:", err));
+        }).catch(function(err) {
+            console.warn('Error fetching markdown file:', err);
+        });
     };
 </script>
+
 </body>
 </html>
