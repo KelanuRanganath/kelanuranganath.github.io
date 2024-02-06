@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/21.1.1/primer.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/css/style.css?v=bd81feb6c780d4cadfc3e3977c077dd45f80df8f">
     <script>
       window.MathJax = {
         tex: {
@@ -25,7 +23,6 @@
 </head>
 <body>
 <div id="markdownContent"></div>
-<script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
 <script>
   window.onload = function() {
     var converter = new showdown.Converter();
@@ -35,9 +32,7 @@
       .then(response => response.text())
       .then(text => {
         var htmlContent = converter.makeHtml(text);
-        console.log(htmlContent); // This should output the converted HTML
-        document.getElementById('markdownContent').innerHTML = '<div class="markdown-body">' + htmlContent + '</div>';
-        // Optionally, trigger MathJax to reprocess the document if you have LaTeX in your Markdown
+        document.getElementById('markdownContent').innerHTML = htmlContent + '</div>';
         if (window.MathJax) {
           MathJax.typesetPromise();
         }
@@ -45,7 +40,5 @@
       .catch(err => console.error('Failed to load Markdown file:', err));
   };
 </script>
-
-
 </body>
 </html>
