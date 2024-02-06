@@ -11,7 +11,7 @@ I broke the tension cable in my wrist in June of 2023, it has recently healed, I
 My home gym is the rock wall at Wooden.
 
 #### Buildering at UCLA
-Over the past two years I've learned that UCLA has a long history of buildering. There used to be a page on Mountain Project which was sadly removed as well as all the old images. Thankfully, I had a cached version on my phone.
+Over the past two years I've learned that UCLA has a long history of buildering. There used to be a page on Mountain Project which was sadly removed as well as all the old images. Thankfully, I had a cached version on my phone, some of the climbs were able to be recovered. Those images as well as images I've taken and images from the blog [Excess Vertical](excessvertical.blogspot.com/2012/12/ucla-campus-buildering.html) are below.
 
 ##### Ackerman Union, The Wall (5.10)
 This climb still exists
