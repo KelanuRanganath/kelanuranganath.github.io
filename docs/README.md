@@ -19,6 +19,7 @@ Hello, my name is Kelanu.
 - [Wireless Communication](wireless.md)
 - [Teardowns and Repairs](repairs.md)
 - [Touching Grass](grass.md)
+- [Quantum Mechanics](quantum.md)
 
 
 ## Credit
