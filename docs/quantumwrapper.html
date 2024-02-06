@@ -35,8 +35,7 @@
             return response.text();
         }).then(function(text) {
             var html = converter.makeHtml(text);
-            document.getElementById('markdownContent').innerHTML = '<div class="markdown-body">' + convertedHtmlContent + '</div>';
-
+            document.getElementById('markdownContent').innerHTML = '<div class="markdown-body">' + htmlContent + '</div>';
             
             // Ask MathJax to typeset the newly added content
             MathJax.typesetPromise().then(() => {
