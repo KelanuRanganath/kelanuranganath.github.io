@@ -1,4 +1,10 @@
 ## Touching Grass
+- [Climbing](#Climbing)
+- [Slacklining](#Slacklining)
+- [Snowboarding](#Snowboarding)
+- [Biking](#Biking)
+- [Music](#Music)
+
 
 ### Climbing
 I broke the tension cable in my wrist in June of 2023, it has recently healed, I am now getting back into shape to climb again.
