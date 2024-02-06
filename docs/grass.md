@@ -118,7 +118,7 @@ This climb still exists
 <br>
 <div align="center">
     <a>
-        <img src="images/Capture.PNG" alt="The Wall" title="The Wall" width="350" />
+        <img src="images/Crunch.PNG" alt="The Wall" title="The Wall" width="350" />
     </a>
 </div>
 
