@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']], // Add ['$','$'] to the inlineMath array
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        },
+        startup: {
+          pageReady: () => {
+            return MathJax.startup.defaultPageReady().then(() => {
+              // Optional: Add any additional startup actions here
+              console.log('MathJax is ready and equations should be rendered.');
+            });
+          }
+        }
+      };
+    </script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
