@@ -4,25 +4,25 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
-    <script>
-        window.onload = function() {
-            var converter = new showdown.Converter(),
-                path = 'quantum.md',
-                fetchFile = function(filePath) {
-                    fetch(filePath).then(function(response) {
-                        return response.text();
-                    }).then(function(text) {
-                        document.getElementById('markdownContent').innerHTML = converter.makeHtml(text);
-                    }).catch(function(err) {
-                        console.warn('Error fetching markdown file:', err);
-                    });
-                };
-    
-            fetchFile(path);
-        };
-    </script>
 </head>
 <body>
 <div id="markdownContent"></div>
+<script>
+    window.onload = function() {
+        var converter = new showdown.Converter(),
+            path = 'quantum.md',
+            fetchFile = function(filePath) {
+                fetch(filePath).then(function(response) {
+                    return response.text();
+                }).then(function(text) {
+                    document.getElementById('markdownContent').innerHTML = converter.makeHtml(text);
+                }).catch(function(err) {
+                    console.warn('Error fetching markdown file:', err);
+                });
+            };
+
+        fetchFile(path);
+    };
+</script>
 </body>
 </html>
