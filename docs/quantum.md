@@ -1,7 +1,18 @@
+<!-- Add MathJax Script Tags -->
 <script type="text/javascript" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
-<script type="text/javascript" src="path-to-your-mathjax-config.js"></script>
+
+<!-- Add MathJax Configuration -->
+<script type="text/javascript">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true
+    }
+  });
+</script>
 
 # Quantum Mechanics
 
