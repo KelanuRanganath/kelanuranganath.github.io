@@ -17,6 +17,7 @@ Hello, my name is Kelanu.
 - [Mel's Math Musings](https://mealaud.github.io/)
 - [Rapscallion Randall's Repository](https://www.randallscharpf.com/)
 - [Carter's Collection of Curios](carterharrison.com/)
+- [Felix](linkedin.com/in/felix-lam-12678aa5/)
 - [Radar](radar.md)
 - [Wireless Communication](wireless.md)
 - [Teardowns and Repairs](repairs.md)
