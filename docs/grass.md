@@ -4,7 +4,10 @@
 - [Snowboarding](#Snowboarding)
 - [Biking](#Biking)
 - [Music](#Music)
+- [Cooking](#Cooking)
 
+### Cooking
+I like cooking. It's been awhile since I've had a kitchen. I'll post pictures here eventually.
 
 ### Climbing
 I broke the tension cable in my wrist in June of 2023, it has recently healed, I am now getting back into shape to climb again.
