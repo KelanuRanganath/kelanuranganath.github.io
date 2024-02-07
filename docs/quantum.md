@@ -15,9 +15,12 @@ $$\\ket{\alpha} = \sum c_n \\ket{\alpha_n}$$
 #### Dual Space and Bras
 A dual space on $\\mathcal{H}$ is the set of linear functionals from $\\mathcal{H} \rightarrow \\mathbb{C}$ denoted as $\\mathcal{H^{\ast}}=(\\mathcal{H},\mathbb{C})$. We refer to elements of the dual space as bras and denote them $\\bra{\alpha}$.
 
-#### Operations on Bras and Kets
-The inner product $\\braket{\alpha | \beta}$, is the application of $\\ket{\beta}$ to the linear functional $\\bra{\alpha}$ which is an element of the field $\mathbb{C}$. Physically, we're projecting $\\ket{\beta}$ onto $\\ket{\alpha}$.
+#### Riesz's Representation Theorem, Inner Products, and Dual Correspondence
+For every continuous $\\bra{\psi}$, there exists a unique $\\ket{\psi}$ such that the inner product $\\bra{\psi}(\\ket{\psi})=\\braket{\psi | \psi}$ is antilinear in it's first argument and linear in it's second argument.
 
+The canonical map from $\Omega: \\mathcal{H} \rightarrow \\mathcal{H^{\ast}$ simply sends $\\ket{\alpha} \rightarrow \\bra{\alpha}$
+
+#### Outer Products
 The outer product $\\ket{\alpha}\\bra{\beta}$ is an operator on the state space and a scalar on the dual, $\\bra{\psi}(\\ket{\alpha}\\bra{\beta})\\ket{\phi}=c\\braket{\beta | \phi} = c'\\braket{\psi | \alpha}$.
 
 #### Eigen-kets
