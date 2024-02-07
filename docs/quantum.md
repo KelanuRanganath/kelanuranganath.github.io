@@ -11,7 +11,7 @@ Let $\\mathcal{H}$ be a seperable complex Hilbert space and $A$ be a hermetian o
 Naturally, we can say that any arbitrary state vector $\\ket{\alpha}$ is a superposition of an eigenbasis that spans our quantum state space, 
 $\\ket{\alpha} = \sum C_n \\ket{\alpha}$. This of course means that for a given system, we have multiple operators $A$ that are hermetian, we call these observables. For each of these observables we can expand our state and transform between them.
 
-We'll assume from now on, unless otherwise noted that $\mathcal{H}$ refers not just to any Hilbert space but a quantum state space.
+We'll assume from now on, unless otherwise noted that $\mathcal{H}$ refers not just to any Hilbert space but a finite-dimensional quantum state space.
 
 #### Theorem 0.2: All Hermetian Operators Have an Eigenbasis
 Let $A$ be a hermetian operator.
