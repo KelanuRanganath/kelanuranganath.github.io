@@ -1,5 +1,10 @@
 # Quantum Mechanics
+Sources:
 
+- *Quantum Mechanics, A Modern Development* by Leslie E Ballentine
+- *Modern Quantum Mechanics* by J.J. Sakuari
+- *Introduction to Quantum Mechanics* by David J. Griffiths
+- *Principles of Quantum Mechanics* by R. Shankar
 ## Fundamentals
 ### Bra Ket Notation
 #### Hilbert Space
