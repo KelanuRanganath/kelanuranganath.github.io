@@ -24,3 +24,25 @@ A dual space on $\\mathcal{H}$ is the set of linear functionals from $\\mathcal{
 #### Theorem 0.5: Isomorphic Subspace of an Space Dual to an Infinite Dimeninsional Vector Space
 
 #### Postulate 0.6: Reality Strikes
+First we define the mysterious inner product $\\braket{\alpha | \beta}$, it's just the application of $\\ket{\beta}$ to the linear functional $\\bra{\alpha}$ which is just an element of the field $\mathbb{C}$. Physically, we're projecting $\\ket{\beta}$ onto $\\ket{\alpha}$,.
+
+### Base Kets
+
+### Measurements
+
+### Change of Basis
+
+### Position, Momentum, and Translation
+
+### Wave Functions
+
+## Quantum Dynamics
+### Time-Evolution and the SE
+### SE vs. Heisenberg
+### Harmonic Oscillator
+### Schrodinger's Wave Equation
+### Eementary Solutions to Schrodinger's Equation
+### Propagators and Feynman Path Integrals
+### Potentials and Gauge Transformations
+## Theory of Angular Momentum
+### Rotations and Angular-Momentum Commutation Relations
