@@ -15,7 +15,7 @@ $$\\ket{\alpha} = \sum c_n \\ket{\alpha_n}$$
 #### Dual Space and Bras
 A dual space on $\\mathcal{H}$ is the set of linear functionals from $\\mathcal{H} \rightarrow \\mathbb{C}$ denoted as $\\mathcal{H^{\ast}}=(\\mathcal{H},\mathbb{C})$. We refer to elements of the dual space as bras and denote them $\\bra{\alpha}$.
 
-#### Riesz's Representation Theorem, Inner Products, and Dual Correspondence
+#### Riesz's Representation Theorem and Inner Products
 For every continuous $\\bra{\psi}$, there exists a unique $\\ket{\psi}$ such that the inner product $\\bra{\psi}(\\ket{\psi})=\\braket{\psi | \psi}$ is antilinear in it's first argument and linear in it's second argument.
 
 The canonical map from $\Omega: \\mathcal{H} \rightarrow \\mathcal{H^{\ast}$ simply sends $\\ket{\alpha} \rightarrow \\bra{\alpha}$
@@ -24,7 +24,9 @@ The canonical map from $\Omega: \\mathcal{H} \rightarrow \\mathcal{H^{\ast}$ sim
 The outer product $\\ket{\alpha}\\bra{\beta}$ is an operator on the state space and a scalar on the dual, $\\bra{\psi}(\\ket{\alpha}\\bra{\beta})\\ket{\phi}=c\\braket{\beta | \phi} = c'\\braket{\psi | \alpha}$.
 
 #### Eigen-kets
-Suppose $A$ is a Hermetian operator on 
+Suppose $A$ is a Hermetian operator on
+
+#### Continuous Spectra and Rigged Hilbert Spaces
 
 From theorem 0.4 $dim \\mathcal{H} = dim \\mathcal{H^{\ast}}$ and if we fix a particular eigenbasas of $\\mathcal{H}$ then there exists a unique dual basis such that there is an isomorphism between the basis vectors. If $\\mathcal{H}$ is infinite dimensional, then we have the weaker condition that there exists a subspace of the dual which is isomorphic to $\\mathcal{H}$.
 
@@ -36,9 +38,6 @@ $$\\ket{\alpha} = \sum \\braket{\alpha_n | \alpha}\\ket{\alpha_n}$$
 
 th
 
-#### Theroem 0.4: Dimension of a Dual Space is the Dimension of the Original Space
-
-#### Theorem 0.5: Isomorphic Subspace of an Space Dual to an Infinite Dimeninsional Vector Space
 
 
 ### Base Kets
