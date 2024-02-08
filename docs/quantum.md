@@ -8,7 +8,16 @@ Sources:
 - *Introduction to Quantum Mechanics* by David J. Griffiths
 - *Principles of Quantum Mechanics* by R. Shankar
 ## Fundamentals
+### Quick Thoughts
+- You can't represent an exact state in the Ket space, it has to be represented as a Delta distribution, which only exists in the dual of a Schwarz space (proof?)
+- You can construct the Schwarz space as a subspace of a Hilbert space with extra structure, this is where rigged Hilbert spaces comes from
+- Riez's theorem only gives you an existence of a canonical isomorphism between a subspace of the dual of the Hilbert space (the space of bounded linear functionals), but the Fourier transform and the commutation relations gize you a constructive map???
+- Does the subspace considered in Riez's theorem (bounded functionals) match the dual space of the Schwarz subspace???
+- If we begin with the commutation relation, it seems like it's possible to naturally generate Rigged Hilbert Spaces, as well as the spectral theorem.
+- The spectral theorem, gives a result for the outer product of bras and kets
+
 ### Bra Ket Notation
+
 #### Hilbert Space
 A Hilbert space $\\mathcal{H}$ is an inner product space over the real or complex field that is also a complete metric space. For the metric we consider the distance induced by the inner product.
 
