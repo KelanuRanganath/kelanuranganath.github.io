@@ -1,12 +1,26 @@
 # Quantum Mechanics
 Notes on undergraduate QM at UCLA
 
-Sources:
+QM textbook sources in order of frequency referenced
 
 - *Quantum Mechanics, A Modern Development* by Leslie E Ballentine
 - *Modern Quantum Mechanics* by J.J. Sakuari
 - *Introduction to Quantum Mechanics* by David J. Griffiths
-- *Principles of Quantum Mechanics* by R. Shankar
+
+Other sources referenced
+- [*Generalized Functions* by Gel'fand and Vilenkin](https://ia802306.us.archive.org/33/items/gelfand-vilenkin-generalized-functions-vol-4-applications-of-harmonic-analysis/Gelfand%2C%20Vilenkin%20-%20Generalized%20Functions%20-%20Vol%204%20-%20Applications%20of%20Harmonic%20Analysis.pdf)
+- [*Linear Algebra* by Hoffman and Kunze](https://www.math.pku.edu.cn/teachers/anjp/textbook.pdf)
+- https://math.stackexchange.com/questions/2569773/existence-of-the-dirac-%CE%B4-function-defined-as-a-distribution
+- https://physics.stackexchange.com/questions/694929/what-is-the-point-in-using-dual-spaces-for-quantum-mechanics
+- https://math.stackexchange.com/questions/35779/what-can-be-said-about-the-dual-space-of-an-infinite-dimensional-real-vector-spa
+
+
+Special thanks to the following people for indulging many hours of questions
+
+- Trevor Reutershan
+- Mealaud Mokhtarzad
+- Michael Seggebruch
+  
 ## Fundamentals
 ### Quick Thoughts
 - You can't represent an exact state in the Ket space, it has to be represented as a Delta distribution, which only exists in the dual of a Schwarz space (proof?)
