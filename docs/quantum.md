@@ -1,18 +1,19 @@
 # Quantum Mechanics
 Notes on undergraduate QM at UCLA
 
-QM textbook sources in order of frequency referenced
+Textbook sources in order of frequency referenced
 
 - *Quantum Mechanics, A Modern Development* by Leslie E Ballentine
 - *Modern Quantum Mechanics* by J.J. Sakuari
+- *Linear Algebra* by Hoffman and Kunze
 - *Introduction to Quantum Mechanics* by David J. Griffiths
+- *Generalized Functions* by Gel'fand and Vilenkin
 
 Other sources referenced
-- [*Generalized Functions* by Gel'fand and Vilenkin](https://ia802306.us.archive.org/33/items/gelfand-vilenkin-generalized-functions-vol-4-applications-of-harmonic-analysis/Gelfand%2C%20Vilenkin%20-%20Generalized%20Functions%20-%20Vol%204%20-%20Applications%20of%20Harmonic%20Analysis.pdf)
-- [*Linear Algebra* by Hoffman and Kunze](https://www.math.pku.edu.cn/teachers/anjp/textbook.pdf)
-- [Delta Distribution in $S^{\ast}$](https://math.stackexchange.com/questions/2569773/existence-of-the-dirac-%CE%B4-function-defined-as-a-distribution)
+- [Delta Distribution](https://math.stackexchange.com/questions/2569773/existence-of-the-dirac-%CE%B4-function-defined-as-a-distribution)
 - [What's the point of defining our inner product on the dual?](https://physics.stackexchange.com/questions/694929/what-is-the-point-in-using-dual-spaces-for-quantum-mechanics)
 - [Dual of infinite dimensional vector spaces](https://math.stackexchange.com/questions/35779/what-can-be-said-about-the-dual-space-of-an-infinite-dimensional-real-vector-spa)
+- [The Role of Rigged Hilbert Spaces](https://arxiv.org/pdf/quant-ph/0502053.pdf)
 
 
 Special thanks to the following people for indulging many hours of questions
