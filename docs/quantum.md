@@ -13,6 +13,7 @@ Other sources referenced
 - [Delta Distribution](https://math.stackexchange.com/questions/2569773/existence-of-the-dirac-%CE%B4-function-defined-as-a-distribution)
 - [What's the point of defining our inner product on the dual?](https://physics.stackexchange.com/questions/694929/what-is-the-point-in-using-dual-spaces-for-quantum-mechanics)
 - [Dual of infinite dimensional vector spaces](https://math.stackexchange.com/questions/35779/what-can-be-said-about-the-dual-space-of-an-infinite-dimensional-real-vector-spa)
+- [Momentum Fourier Transform](https://physics.stackexchange.com/questions/39442/intuitive-explanation-of-why-momentum-is-the-fourier-transform-variable-of-posit)
 - [The Role of Rigged Hilbert Spaces](https://arxiv.org/pdf/quant-ph/0502053.pdf)
 
 
