@@ -5,9 +5,7 @@ Textbook sources in order of frequency referenced
 
 - *Quantum Mechanics, A Modern Development* by Leslie E Ballentine
 - *Modern Quantum Mechanics* by J.J. Sakuari
-- *Linear Algebra* by Hoffman and Kunze
 - *Introduction to Quantum Mechanics* by David J. Griffiths
-- *Generalized Functions* by Gel'fand and Vilenkin
 - *Quantum Theory: A Hilbert Space Formalism for Probability Theory* by R. E. Collins
 
 Other sources referenced
