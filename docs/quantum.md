@@ -8,6 +8,7 @@ Textbook sources in order of frequency referenced
 - *Linear Algebra* by Hoffman and Kunze
 - *Introduction to Quantum Mechanics* by David J. Griffiths
 - *Generalized Functions* by Gel'fand and Vilenkin
+- *Quantum Theory: A Hilbert Space Formalism for Probability Theory* by R. E. Collins
 
 Other sources referenced
 - [Delta Distribution](https://math.stackexchange.com/questions/2569773/existence-of-the-dirac-%CE%B4-function-defined-as-a-distribution)
@@ -15,7 +16,6 @@ Other sources referenced
 - [Dual of infinite dimensional vector spaces](https://math.stackexchange.com/questions/35779/what-can-be-said-about-the-dual-space-of-an-infinite-dimensional-real-vector-spa)
 - [Momentum Fourier Transform](https://physics.stackexchange.com/questions/39442/intuitive-explanation-of-why-momentum-is-the-fourier-transform-variable-of-posit)
 - [The Role of Rigged Hilbert Spaces](https://arxiv.org/pdf/quant-ph/0502053.pdf)
-
 
 Special thanks to the following people for indulging many hours of questions
 
