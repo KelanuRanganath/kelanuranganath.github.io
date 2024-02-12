@@ -38,6 +38,8 @@ conservation of probability -> continuity equation
 
 continuity equation -> Born representation -> Hilbert space
 
+continutiy equation -> phase space representation
+
 Hilbert space -> dual space -> operators and spectral theorem
 
 spectral theorem -> degenerate and continuous spectra
