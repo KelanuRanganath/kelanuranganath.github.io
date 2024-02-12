@@ -24,30 +24,30 @@ Special thanks to the following people for indulging many hours of questions
 - Michael Seggebruch
   
 ## Fundamentals
-<!---
 
-- You can't represent an exact state in the Ket space, it has to be represented as a Delta distribution, which only exists in the dual of a Schwarz space (proof?)
-- You can construct the Schwarz space as a subspace of a Hilbert space with extra structure, this is where rigged Hilbert spaces comes from
-- Riez's theorem only gives you an existence of a canonical isomorphism between a subspace of the dual of the Hilbert space (the space of bounded linear functionals), but the Fourier transform and the commutation relations gize you a constructive map???
-- Does the subspace considered in Riez's theorem (bounded functionals) match the dual space of the Schwarz subspace???
-- If we begin with the commutation relation, it seems like it's possible to naturally generate Rigged Hilbert Spaces, as well as the spectral theorem.
-- The spectral theorem, gives a result for the outer product of bras and kets
+Linear algebra is to quantum mechanics as multi-variable calculus is to the study of electrodynamics. There are a lot of unintuitive results and postulates that follow directly from examining the underlying structure. Consider the following statements: it is a postulate that $\\Braket{\alpha | \beta} = \\Braket{\beta | \alpha}^{\ast}$, every self-adjoint operator forms an eigen-basis which spans $\\mathcal{H}$, the map between position and momentum is the Fourier transform. The first statement is not a postulate but a corallary of Reiz's Representation theorem, the second statement is not true for degenerate or continuous spectrums, and the third statement can be derived from first principle; unfortunately, these are all statements from commonly used under-graduate and graduate quantum mechanics textbooks. My goal with these notes is to work through Sakuari's book, section by section, in enough detail to grasp from first principle undergraduate quantum mechanics.
 
---->
+This is the order of topics
 
-#### The $\delta$ Distribution Exists in $S^{\ast}$
+- Probabilities and Hilbert spaces
+- Kets, dual spaces, bras, and operators
+- Eigen-functions and why a Hilbert space is insufficient
+- The Gel'fand triple and Nuclear Spaces
 
-#### $S$ is a Nuclear Space $\Omega$ of $\\mathcal{H}$
+We begin with a probability distribution and it's associated normalization condition
 
-#### Rigged Hilbert Space ($S \subset \\mathcal{H} \subset S^{\ast}$)
+conservation of probability -> continuity equation
 
-#### Quantum State Space, Bras, and Kets
+continuity equation -> Born representation -> Hilbert space
 
-#### Spectral Theorem
+Hilbert space -> dual space -> operators and spectral theorem
 
-#### Riez's Representation Theorem
+spectral theorem -> degenerate and continuous spectra
 
-#### Commutator Relations
+degenerate and continuous spectra -> Gel'fand triple
 
-#### The Wave Equation
+Gel'fand triple -> Riesz Theorem
 
+Riesz Theorem -> canonical commutation relations and the Fourier kernel
+
+Examples
