@@ -58,12 +58,11 @@ The special feature of a locally convex vector space is that is that using only 
 ##### Postulate: There is a metric induced by the family of seminorms
 $$d(x,y) = \sum_n 2^{-n}\frac{p_n(x-y)}{1+p_n(x-y)}$$
 
-First we'll prove convergence, consider the sequence $\sum_n 2^{-n}$, this is a geometric series which converges to $2(1-\frac{1}{2}^{j+1})$ or $2$, where $j$ is the cardinality of $\\mathcal{P}$ if finite. Since $\frac{p_n(x-y)}{1+p_n(x-y)} < 1$ for all $n$ it our original sequence is strictly larger term by term, so our smaller sum also convergences.
-
-- $d(x,x)$
+- First we'll prove convergence, consider the sequence $\sum_n 2^{-n}$, this is a geometric series which converges to $2(1-\frac{1}{2}^{j+1})$ or $2$, where $j$ is the cardinality of $\\mathcal{P}$ if finite. Since $\frac{p_n(x-y)}{1+p_n(x-y)} < 1$ for all $n$ it our original sequence is strictly larger term by term, so our smaller sum also convergences.
+- $d(x,x) = \sum_n 2^{-n}\frac{p_n(x-x)}{1+p_n(x-x)} = \sum_n 0 = 0$
 - $x \neq y \implies d(x,y)>0$
-- $d(x,y) = d(y,x)$
-- $d(x,z) \leq d(x,y) + d(y,z)$
+- $d(x,y) = \sum_n 2^{-n}\frac{p_n(x-y)}{1+p_n(x-y)} = \sum_n 2^{-n}\frac{|-1|p_n(y-x)}{1+|-1|p_n(y-x)} = \sum_n 2^{-n}\frac{p_n(y-x)}{1+p_n(y-x)} = d(y,x)$
+- $d(x,z) \leq d(x,y) + d(y,z)$ this is cursed
 
 We can take the completion of a locally convex vector space $V$ with respect to this new metric induced by $\\mathcal{P}$. This new complete locally convex vector space is called a Frechet space; here's the catch, Banach and more importantly Hilbart spaces are Frechet spaces and the operators we define on our Hilbert space will only be defined on a locally convex subset.
 
