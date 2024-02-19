@@ -14,8 +14,8 @@ Other sources referenced
 - [Dual of infinite dimensional vector spaces](https://math.stackexchange.com/questions/35779/what-can-be-said-about-the-dual-space-of-an-infinite-dimensional-real-vector-spa)
 - [Momentum Fourier Transform](https://physics.stackexchange.com/questions/39442/intuitive-explanation-of-why-momentum-is-the-fourier-transform-variable-of-posit)
 - [The Role of Rigged Hilbert Spaces](https://arxiv.org/pdf/quant-ph/0502053.pdf)
-- [Groups, Special Functions, and Rigged Hilbert Spaces]
-- [The Spectral Representation of Normal Operators on a Rigged Hilbert Space]
+- [Groups, Special Functions, and Rigged Hilbert Spaces]()
+- [The Spectral Representation of Normal Operators on a Rigged Hilbert Space]()
 
 Special thanks to the following people for indulging many hours of questions
 
@@ -56,9 +56,9 @@ So we can partition $V$ by it's seminorms, forming quotient spaces, formally ref
 The special feature of a locally convex vector space is that is that using only a family of seminorms we can approximate a normed space by creating a norm from our seminorms.
 
 ##### Postulate: There is a metric induced by the family of seminorms
-$$d(x,y) = \sum_n 2^{-n}\frac{p_n(x-y)}{1+p(x-y}$$
+$$d(x,y) = \sum_n 2^{-n}\frac{p_n(x-y)}{1+p_n(x-y)}$$
 
-First we'll prove convergence, consider the sequence $\sum_n 2^{-n}$, this is a geometric series which converges to $2(1-\frac{1}{2}^{j+1})$ or $2$, where $j$ is the cardinality of $\\mathcal{P}$ if finite. Since $\frac{p_n(x-y)}{1+p(x-y} < 1$ for all $n$ it our original sequence is strictly larger term by term, so our smaller sum also convergences.
+First we'll prove convergence, consider the sequence $\sum_n 2^{-n}$, this is a geometric series which converges to $2(1-\frac{1}{2}^{j+1})$ or $2$, where $j$ is the cardinality of $\\mathcal{P}$ if finite. Since $\frac{p_n(x-y)}{1+p_n(x-y)} < 1$ for all $n$ it our original sequence is strictly larger term by term, so our smaller sum also convergences.
 
 - $d(x,x)$
 - $x \neq y \implies d(x,y)>0$
