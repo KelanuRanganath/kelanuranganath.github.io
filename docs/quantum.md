@@ -14,6 +14,8 @@ Other sources referenced
 - [Dual of infinite dimensional vector spaces](https://math.stackexchange.com/questions/35779/what-can-be-said-about-the-dual-space-of-an-infinite-dimensional-real-vector-spa)
 - [Momentum Fourier Transform](https://physics.stackexchange.com/questions/39442/intuitive-explanation-of-why-momentum-is-the-fourier-transform-variable-of-posit)
 - [The Role of Rigged Hilbert Spaces](https://arxiv.org/pdf/quant-ph/0502053.pdf)
+- [Groups, Special Functions, and Rigged Hilbert Spaces]
+- [The Spectral Representation of Normal Operators on a Rigged Hilbert Space]
 
 Special thanks to the following people for indulging many hours of questions
 
@@ -21,33 +23,41 @@ Special thanks to the following people for indulging many hours of questions
 - Mealaud Mokhtarzad
 - Michael Seggebruch
   
-## Fundamentals
+The following proof is nearly directly from *The Spectral Representation of Normal Operators on a Rigged Hilbert Space* by G. Gould. I'm writing it out to add my own notation and exposition and to go with the rest of my quantum notes. We start by defining some terms regarding topological vector spaces.
 
-Linear algebra is to quantum mechanics as multi-variable calculus is to the study of electrodynamics. There are a lot of unintuitive results and postulates that follow directly from examining the underlying structure. Consider the following statements: it is a postulate that $\\Braket{\alpha | \beta} = \\Braket{\beta | \alpha}^{\ast}$, every self-adjoint operator forms an eigen-basis which spans $\\mathcal{H}$, the map between position and momentum is the Fourier transform. The first statement is not a postulate but a corallary of Reiz's Representation theorem, the second statement is not true for degenerate or continuous spectrums, and the third statement can be derived from first principle; unfortunately, these are all statements from commonly used under-graduate and graduate quantum mechanics textbooks. My goal with these notes is to work through Sakuari's book, section by section, in enough detail to grasp from first principle undergraduate quantum mechanics.
+#### Locally Convex Vector Spaces
+A locally convex vector space is a vector space $V$ and a family of seminorms $\\mathcal{P}$ on $V$.
 
-This is the order of topics
+A seminorm on $V$ is a map $p:V \rightarrow \\mathbb{R}$, such that for all $x,y\in V$
+- $p(x) \geq 0$
+- $p(sx) = |s|p(x)$ for all $s \in \\mathbb{R}$
+- $p(x+y) \leq p(x) + p(y)$
 
-- Probabilities and Hilbert spaces
-- Kets, dual spaces, bras, and operators
-- Eigen-functions and why a Hilbert space is insufficient
-- The Gel'fand triple and Nuclear Spaces
+The family of seminorms induces the initial topology by requiring the family of seminorms to be continuous.
 
-We begin with a probability distribution and it's associated normalization condition
+Consider the relation $x \sim y$ iff $p(x-y) = 0$ for some fixed seminorm in $V$. This is an equivelance relation
+- $p(x - x) = p(x + -x) = p(0) = |0|p(0) = 0$
+- $p(x-y) = p(-1(y-x)) = |-1|p(y-x) = p(y-x)$
+- suppose $p(x-y) = p(y-z) = 0$, then $p(x-y + y - z) \leq p(x-y) + p(y-z)$, which simplifies to $0 \leq p(x-z) \leq 0$, thus $x \sim z$
 
-conservation of probability -> continuity equation
+So we can partition $V$ by it's seminorms, forming quotient spaces, formally refered to as $V/ ker(p) = V_p$. Each of these quotient spaces admits a canonical norm defined by the seminorm.
 
-continuity equation -> Born representation -> Hilbert space
+Completeness (Cauchy sequences converge within the vector space) only makes sense in the context of a metric, when a locally convex vector spacess is endowed with a complete metric it's refered to as a Frechet space. We can in general take the completion of a locally convex vector space $V$ (really any metric space) and denoted it $\hat{V}$.
 
-continutiy equation -> phase space representation
+We'll use this definition generally and won't define, unless needed, the metric in question.
 
-Hilbert space -> dual space -> operators and spectral theorem
+We postulate that if $\chi: E_p \rightarrow E_q$ is the canonical map between quotient spaces, we can lift $\hat{\chi}: \hat{E_p} \rightarrow \hat{E_q}$, such that $\chi$ is the unique continuous extension of $\chi$.
 
-spectral theorem -> degenerate and continuous spectra
+#### Definition: Nuclear Mapping
+A mapping $T: E \rightarrow F$ is nuclear if
+- $E$ is locally convex on the field $\\mathbb{K}$
+- $F$ is a Frechet space on the field $\\mathbb{K}$
+- $T = \sum \lambda_n f_n \otimes y_n$
+  - $\lambda_n \in \\mathbb{R}_{\geq 0}$
+  - $\sum \lambda_n < \infty$
+  - $f_n \in E^{\ast}$, $f_n$ is a sequence of functionals in the dual of $E$, $E^{\ast}$
+  - $y_n \in F$, $y_n$ is a bounded sequence in $F$
+  - $f_n \otimes y_n:E \rightarrow F$ is defined elementwise by $g_{f_n,y_n}(x) = f_n(x)y_n$ which is a scaled vector of the Frechet space.
 
-degenerate and continuous spectra -> Gel'fand triple
-
-Gel'fand triple -> Riesz Theorem
-
-Riesz Theorem -> canonical commutation relations and the Fourier kernel
-
-Examples
+#### Definition: Nuclear Space
+A locally convex space E is nuclear if for all $p \in \\mathcal{P}$ there exists a $q \in \\mathcal{P}$ where $q > p$ (remember that $E$ has the initial topology), such that the map $\hat{E}_q \rightarrow \hat{E}_p$ is nuclear.
