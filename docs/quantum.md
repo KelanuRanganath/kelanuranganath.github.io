@@ -25,7 +25,18 @@ Special thanks to the following people for indulging many hours of questions
   
 The following proof is nearly directly from *The Spectral Representation of Normal Operators on a Rigged Hilbert Space* by G. Gould. I'm writing it out to add my own notation and exposition and to go with the rest of my quantum notes. We start by defining some terms regarding topological vector spaces.
 
-#### Locally Convex Vector Spaces
+#### Definition: Topological Vector Spaces (Rudin)
+A topological space is a set $S$ with a collection of subsets (open sets) called a topology $\tau$ wich has the following properties
+- $S \in \tau$ is open
+- $\emptyset \in \tau$ is open
+- for all $x,y \in tau$ the intesection $x \cap y \in \tau$ is open
+- the union of all subsets $\bigcup_{x_n \in \tau} x_n \in \tau$ is open
+
+If $S$ is a vector space with a topology $\tau$, then $\tau$ is a vector topology on $S$. $S$ is a topological vector space if
+- every point of $S$ is a closed set
+- the vector space operations are continuous with respect to $\tau$
+
+#### Definiton: Locally Convex Vector Spaces
 A locally convex vector space is a vector space $V$ and a family of seminorms $\\mathcal{P}$ on $V$.
 
 A seminorm on $V$ is a map $p:V \rightarrow \\mathbb{R}$, such that for all $x,y\in V$
@@ -33,26 +44,37 @@ A seminorm on $V$ is a map $p:V \rightarrow \\mathbb{R}$, such that for all $x,y
 - $p(sx) = |s|p(x)$ for all $s \in \\mathbb{R}$
 - $p(x+y) \leq p(x) + p(y)$
 
-The family of seminorms induces the initial topology by requiring the family of seminorms to be continuous.
+The family of seminorms induces the initial topology by requiring the family of seminorms to be continuous. This topology doesn't 
 
-Consider the relation $x \sim y$ iff $p(x-y) = 0$ for some fixed seminorm in $V$. This is an equivelance relation
+Consider the relation $x \sim y$ iff $p(x-y) = 0$ for some fixed seminorm in $V$. This is an eq. relation
 - $p(x - x) = p(x + -x) = p(0) = |0|p(0) = 0$
 - $p(x-y) = p(-1(y-x)) = |-1|p(y-x) = p(y-x)$
 - suppose $p(x-y) = p(y-z) = 0$, then $p(x-y + y - z) \leq p(x-y) + p(y-z)$, which simplifies to $0 \leq p(x-z) \leq 0$, thus $x \sim z$
 
-So we can partition $V$ by it's seminorms, forming quotient spaces, formally refered to as $V/ ker(p) = V_p$. Each of these quotient spaces admits a canonical norm defined by the seminorm.
+So we can partition $V$ by it's seminorms, forming quotient spaces, formally refered to as $V/ ker(p) = V_p$. Each of these quotient spaces admits a norm defined by it's respective seminorm.
 
-Completeness (Cauchy sequences converge within the vector space) only makes sense in the context of a metric, when a locally convex vector spacess is endowed with a complete metric it's refered to as a Frechet space. We can in general take the completion of a locally convex vector space $V$ (really any metric space) and denoted it $\hat{V}$.
+There is a metric induced by the family of seminorms WIP
+$$d(x,y) = \sum_n 2^{-n}\frac{p_n(x-y)}{1+p(x-y}$$
 
-We'll use this definition generally and won't define, unless needed, the metric in question.
+First we'll prove convergence, consider the sequence $\sum_n 2^{-n}$, this is a geometric series 
+
+- $d(x,x)$
+- $x \neq y \implies d(x,y)>0$
+- $d(x,y) = d(y,x)$
+- $d(x,z) \leq d(x,y) + d(y,z)$
+
+We can take the completion of a locally convex vector space $V$ with respect to this new metric induced by $\\mathcal{P}$. This new complete locally convex vector space is called a Frechet space.
 
 We postulate that if $\chi: E_p \rightarrow E_q$ is the canonical map between quotient spaces, we can lift $\hat{\chi}: \hat{E_p} \rightarrow \hat{E_q}$, such that $\chi$ is the unique continuous extension of $\chi$.
+
+##### Aside: Completeness
+A complete metric space just says that all Cauchy sequences converge within the space.
 
 #### Definition: Nuclear Mapping
 A mapping $T: E \rightarrow F$ is nuclear if
 - $E$ is locally convex on the field $\\mathbb{K}$
 - $F$ is a Frechet space on the field $\\mathbb{K}$
-- $T = \sum \lambda_n f_n \otimes y_n$
+- $T = \sum_n \lambda_n f_n \otimes y_n$
   - $\lambda_n \in \\mathbb{R}_{\geq 0}$
   - $\sum \lambda_n < \infty$
   - $f_n \in E^{\ast}$, $f_n$ is a sequence of functionals in the dual of $E$, $E^{\ast}$
@@ -60,4 +82,10 @@ A mapping $T: E \rightarrow F$ is nuclear if
   - $f_n \otimes y_n:E \rightarrow F$ is defined elementwise by $g_{f_n,y_n}(x) = f_n(x)y_n$ which is a scaled vector of the Frechet space.
 
 #### Definition: Nuclear Space
-A locally convex space E is nuclear if for all $p \in \\mathcal{P}$ there exists a $q \in \\mathcal{P}$ where $q > p$ (remember that $E$ has the initial topology), such that the map $\hat{E}_q \rightarrow \hat{E}_p$ is nuclear.
+A locally convex space E is nuclear if for all $p \in \\mathcal{P}$ there exists a $q \in \\mathcal{P}$ where $q > p$, such that the map $\hat{E}_q \rightarrow \hat{E}_p$ is nuclear.
+
+#### Theorem
+A locally convex space $E$ is nuclear iff every continuous linear map from $E$ into any Banach space is nuclear.
+
+"The proof of this standard result..." bro what no one has heard of a nuclear space until now.
+
