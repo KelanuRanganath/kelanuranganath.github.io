@@ -29,7 +29,7 @@ The following proof is nearly directly from *The Spectral Representation of Norm
 A topological space is a set $S$ with a collection of subsets (open sets) called a topology $\tau$ wich has the following properties
 - $S \in \tau$ is open
 - $\emptyset \in \tau$ is open
-- for all $x,y \in tau$ the intesection $x \cap y \in \tau$ is open
+- for all $x,y \in \tau$ the intesection $x \cap y \in \tau$ is open
 - the union of all subsets $\bigcup_{x_n \in \tau} x_n \in \tau$ is open
 
 If $S$ is a vector space with a topology $\tau$, then $\tau$ is a vector topology on $S$. $S$ is a topological vector space if
@@ -44,7 +44,7 @@ A seminorm on $V$ is a map $p:V \rightarrow \\mathbb{R}$, such that for all $x,y
 - $p(sx) = |s|p(x)$ for all $s \in \\mathbb{R}$
 - $p(x+y) \leq p(x) + p(y)$
 
-The family of seminorms induces the initial topology by requiring the family of seminorms to be continuous. This topology doesn't 
+The family of seminorms induces the initial topology by requiring the family of seminorms to be continuous. This topology doesn't induce continuous vector operations and thus $v$ is not a topological vector space.
 
 Consider the relation $x \sim y$ iff $p(x-y) = 0$ for some fixed seminorm in $V$. This is an eq. relation
 - $p(x - x) = p(x + -x) = p(0) = |0|p(0) = 0$
@@ -53,7 +53,9 @@ Consider the relation $x \sim y$ iff $p(x-y) = 0$ for some fixed seminorm in $V$
 
 So we can partition $V$ by it's seminorms, forming quotient spaces, formally refered to as $V/ ker(p) = V_p$. Each of these quotient spaces admits a norm defined by it's respective seminorm.
 
-There is a metric induced by the family of seminorms WIP
+The special feature of a locally convex vector space is that is that using only a family of seminorms we can approximate a normed space by creating a norm from our seminorms.
+
+##### Postulate: There is a metric induced by the family of seminorms
 $$d(x,y) = \sum_n 2^{-n}\frac{p_n(x-y)}{1+p(x-y}$$
 
 First we'll prove convergence, consider the sequence $\sum_n 2^{-n}$, this is a geometric series which converges to $2(1-\frac{1}{2}^{j+1})$ or $2$, where $j$ is the cardinality of $\\mathcal{P}$ if finite. Since $\frac{p_n(x-y)}{1+p(x-y} < 1$ for all $n$ it our original sequence is strictly larger term by term, so our smaller sum also convergences.
@@ -63,8 +65,9 @@ First we'll prove convergence, consider the sequence $\sum_n 2^{-n}$, this is a 
 - $d(x,y) = d(y,x)$
 - $d(x,z) \leq d(x,y) + d(y,z)$
 
-We can take the completion of a locally convex vector space $V$ with respect to this new metric induced by $\\mathcal{P}$. This new complete locally convex vector space is called a Frechet space.
+We can take the completion of a locally convex vector space $V$ with respect to this new metric induced by $\\mathcal{P}$. This new complete locally convex vector space is called a Frechet space; here's the catch, Banach and more importantly Hilbart spaces are Frechet spaces and the operators we define on our Hilbert space will only be defined on a locally convex subset.
 
+##### Frechet Lifting Lemma
 We postulate that if $\chi: E_p \rightarrow E_q$ is the canonical map between quotient spaces, we can lift $\hat{\chi}: \hat{E_p} \rightarrow \hat{E_q}$, such that $\chi$ is the unique continuous extension of $\chi$.
 
 ##### Aside: Completeness
@@ -80,6 +83,8 @@ A mapping $T: E \rightarrow F$ is nuclear if
   - $f_n \in E^{\ast}$, $f_n$ is a sequence of functionals in the dual of $E$, $E^{\ast}$
   - $y_n \in F$, $y_n$ is a bounded sequence in $F$
   - $f_n \otimes y_n:E \rightarrow F$ is defined elementwise by $g_{f_n,y_n}(x) = f_n(x)y_n$ which is a scaled vector of the Frechet space.
+
+A nuclear mapping and the following theorems give us maps between our approximate normed locally convex space and it's associated complete Frechet space. As motivation, we'll see
 
 #### Definition: Nuclear Space
 A locally convex space E is nuclear if for all $p \in \\mathcal{P}$ there exists a $q \in \\mathcal{P}$ where $q > p$, such that the map $\hat{E}_q \rightarrow \hat{E}_p$ is nuclear.
