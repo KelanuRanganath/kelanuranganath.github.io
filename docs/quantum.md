@@ -23,7 +23,7 @@ Special thanks to the following people for indulging many hours of questions
 - Mealaud Mokhtarzad
 - Michael Seggebruch
   
-The following proof is nearly directly from *The Spectral Representation of Normal Operators on a Rigged Hilbert Space* by G. Gould. I'm writing it out to add my own notation and exposition and to go with the rest of my quantum notes. We start by defining some terms regarding topological vector spaces.
+The following proof follows *The Spectral Representation of Normal Operators on a Rigged Hilbert Space* by G. Gould. I'm writing it out to add my own notation and exposition and to go with the rest of my quantum notes. We start by defining some terms regarding topological vector spaces.
 
 #### Definition: Topological Vector Spaces (Rudin)
 A topological space is a set $S$ with a collection of subsets (open sets) called a topology $\tau$ wich has the following properties
@@ -51,16 +51,16 @@ Consider the relation $x \sim y$ iff $p(x-y) = 0$ for some fixed seminorm in $V$
 - $p(x-y) = p(-1(y-x)) = |-1|p(y-x) = p(y-x)$
 - suppose $p(x-y) = p(y-z) = 0$, then $p(x-y + y - z) \leq p(x-y) + p(y-z)$, which simplifies to $0 \leq p(x-z) \leq 0$, thus $x \sim z$
 
-So we can partition $V$ by it's seminorms, forming quotient spaces, formally refered to as $V/ ker(p) = V_p$. Each of these quotient spaces admits a norm defined by it's respective seminorm.
+So we can partition $V$ by it's seminorms, forming quotient spaces, formally refered to as $V/ ker(p) = V_p$. Each of these quotient spaces admits a norm defined by it's respective seminorm. (needs proof)
 
 The special feature of a locally convex vector space is that is that using only a family of seminorms we can approximate a normed space by creating a norm from our seminorms.
 
 ##### Postulate: There is a metric induced by the family of seminorms
 $$d(x,y) = \sum_n 2^{-n}\frac{p_n(x-y)}{1+p_n(x-y)}$$
 
-- First we'll prove convergence, consider the sequence $\sum_n 2^{-n}$, this is a geometric series which converges to $2(1-\frac{1}{2}^{j+1})$ or $2$, where $j$ is the cardinality of $\\mathcal{P}$ if finite. Since $\frac{p_n(x-y)}{1+p_n(x-y)} < 1$ for all $n$ it our original sequence is strictly larger term by term, so our smaller sum also convergences.
+- First we'll prove convergence, consider the sequence $\sum_n 2^{-n}$, this is a geometric series which converges to $2(1-(\frac{1}{2})^{j+1})$ or $2$, where $j$ is the cardinality of $\\mathcal{P}$ if finite. Since $\frac{p_n(x-y)}{1+p_n(x-y)} < 1$ for all $n$ it our original sequence is strictly larger term by term, so our smaller sum also convergences.
 - $d(x,x) = \sum_n 2^{-n}\frac{p_n(x-x)}{1+p_n(x-x)} = \sum_n 0 = 0$
-- $x \neq y \implies d(x,y)>0$
+- suppose $x \neq y$ then  
 - $d(x,y) = \sum_n 2^{-n}\frac{p_n(x-y)}{1+p_n(x-y)} = \sum_n 2^{-n}\frac{|-1|p_n(y-x)}{1+|-1|p_n(y-x)} = \sum_n 2^{-n}\frac{p_n(y-x)}{1+p_n(y-x)} = d(y,x)$
 - $d(x,z) \leq d(x,y) + d(y,z)$ this is cursed
 
