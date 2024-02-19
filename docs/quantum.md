@@ -69,6 +69,19 @@ We can take the completion of a locally convex vector space $V$ with respect to 
 ##### Frechet Lifting Lemma
 We postulate that if $\chi: E_p \rightarrow E_q$ is the canonical map between quotient spaces, we can lift $\hat{\chi}: \hat{E_p} \rightarrow \hat{E_q}$, such that $\chi$ is the unique continuous extension of $\chi$.
 
+% https://q.uiver.app/#q=WzAsNSxbMCwwLCJFIl0sWzIsMCwiRV9wIl0sWzQsMCwiXFxoYXR7RX1fcCJdLFsyLDIsIkVfcSJdLFs0LDIsIlxcaGF0e0VfcX0iXSxbMCwxXSxbMSwyXSxbMCwzXSxbMyw0XSxbMywxLCJcXGNoaSIsMl0sWzQsMiwiXFxoYXR7XFxjaGl9IiwyXV0=
+\[\begin{tikzcd}
+	E && {E_p} && {\hat{E}_p} \\
+	\\
+	&& {E_q} && {\hat{E_q}}
+	\arrow[from=1-1, to=1-3]
+	\arrow[from=1-3, to=1-5]
+	\arrow[from=1-1, to=3-3]
+	\arrow[from=3-3, to=3-5]
+	\arrow["\chi"', from=3-3, to=1-3]
+	\arrow["{\hat{\chi}}"', from=3-5, to=1-5]
+\end{tikzcd}\]
+
 ##### Aside: Completeness
 A complete metric space just says that all Cauchy sequences converge within the space.
 
