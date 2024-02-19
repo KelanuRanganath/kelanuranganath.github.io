@@ -22,7 +22,7 @@ Hello, my name is Kelanu.
 - [Wireless Communication](wireless.md)
 - [Teardowns and Repairs](repairs.md)
 - [Touching Grass](grass.md)
-- [Quantum Mechanics](quantumwrapper.html)
+- [Quantum Mechanics](https://www.overleaf.com/read/fchkhfjbczqn#c16c28)
 
 
 ## Credit
