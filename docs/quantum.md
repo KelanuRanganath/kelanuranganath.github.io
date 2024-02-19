@@ -56,7 +56,7 @@ So we can partition $V$ by it's seminorms, forming quotient spaces, formally ref
 There is a metric induced by the family of seminorms WIP
 $$d(x,y) = \sum_n 2^{-n}\frac{p_n(x-y)}{1+p(x-y}$$
 
-First we'll prove convergence, consider the sequence $\sum_n 2^{-n}$, this is a geometric series 
+First we'll prove convergence, consider the sequence $\sum_n 2^{-n}$, this is a geometric series which converges to $2(1-\frac{1}{2}^{j+1})$ or $2$, where $j$ is the cardinality of $\\mathcal{P}$ if finite. Since $\frac{p_n(x-y)}{1+p(x-y} < 1$ for all $n$ it our original sequence is strictly larger term by term, so our smaller sum also convergences.
 
 - $d(x,x)$
 - $x \neq y \implies d(x,y)>0$
