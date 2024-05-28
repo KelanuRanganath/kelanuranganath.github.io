@@ -27,7 +27,9 @@ jobs:
         pip install -r requirements.txt
         
     - name: Clean old version
-      run: rm -r main
+      run: |
+        rm -r main
+        rm main.paux
 
     - name: Recompile
       run: plastex main.tex
