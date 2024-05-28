@@ -4,7 +4,8 @@ on:
     paths:
       - 'main.tex'
 jobs:
-  clean:
+  build:
+    if: github.event.pull_request.merged == true
     permissions:
       contents: write
       
