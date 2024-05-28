@@ -1,11 +1,10 @@
 name: Compile website
 on:
   push:
-    paths:
-      - 'main.tex'
+    branches:
+      - master
 jobs:
   build:
-    if: github.event.push_request.merged == true
     permissions:
       contents: write
       
