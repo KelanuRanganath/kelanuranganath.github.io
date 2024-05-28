@@ -1,5 +1,8 @@
 name: Compile website
-on: push
+on:
+  push:
+    paths:
+      - 'main.tex'
 jobs:
   clean:
     permissions:
