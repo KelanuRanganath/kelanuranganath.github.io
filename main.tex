@@ -1,30 +1,10 @@
 \documentclass{article}
 \usepackage{graphicx} % Required for inserting images
-\usepackage[landscape,margin=2cm,twocolumn]{geometry} %Page layout
-\usepackage{fancyhdr} %Page footer
-\usepackage[useregional]{datetime2} %Current time
-
-\setcounter{section}{-1} %Make first section 0
-\newcommand{\fakesection}[1]{%Hidden section
-  \par\refstepcounter{section}% Increase section counter
-  \sectionmark{#1}% Add section mark (header)
-  \addcontentsline{toc}{section}{\protect\numberline{\thesection}#1}% Add section to ToC
-}
-
-\renewcommand{\headrulewidth}{0pt} %Remove header line from fancyhdr
+\title{Kelanu's Website}
 
 \begin{document}
+\maketitle
 
-\pagestyle{fancy}
-\fancyhead{} %Remove section header
-\fancyfoot{} %Remove center page number
-\fancyfoot[L]{Compiled on \today \hspace{4pt}at \DTMcurrenttime} %Latest compile time in footer
-\fancyfoot[R]{\thepage} %Reinsert page number on right side
-
-\section{About Me}
-
-\newpage
-\section{About Not Me}
 
 
 \end{document}
