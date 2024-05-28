@@ -1,2 +1,5 @@
+No implementation found for style `geometry'
+No implementation found for style `fancyhdr'
+No implementation found for style `datetime2'
 
-There is no author for this document.
+\setcounter{section}{-1} ignored, cannot reduce from 0
