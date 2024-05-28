@@ -35,9 +35,11 @@ jobs:
       run: plastex main.tex
       
     - name: Commit files and push it
+      env:
+        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
       run: |
         git config --global user.email "kelanucr@gmail.com"
         git config --global user.name "github actions"
         git add .
         git commit -m "chore: clean repo"
-        git push
+        git push https://${{ secrets.GH_TOKEN }}@github.com/KelanuRanganath/kelanuranganath.github.io.git HEAD:main
