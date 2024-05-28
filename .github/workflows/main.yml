@@ -5,7 +5,7 @@ on:
       - 'main.tex'
 jobs:
   build:
-    if: github.event.pull_request.merged == true
+    if: github.event.push_request.merged == true
     permissions:
       contents: write
       
