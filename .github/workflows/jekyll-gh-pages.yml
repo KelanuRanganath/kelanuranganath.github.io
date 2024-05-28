@@ -28,13 +28,52 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.9
+      
+      - name: Cache pip dependencies
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+      
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      
+      - name: Clean old version
+        run: |
+          rm -r main
+          rm main.paux
+      
+      - name: Recompile
+        run: plastex main.tex
+      
+      - name: Commit files and push it
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          run: |
+            git config --global user.email "kelanucr@gmail.com"
+            git config --global user.name "github actions"
+            git add .
+            git commit -m "chore: clean repo"
+            git push https://${{ secrets.GH_TOKEN }}@github.com/KelanuRanganath/kelanuranganath.github.io.git HEAD:main
+      
       - name: Setup Pages
         uses: actions/configure-pages@v5
+      
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
           source: ./main/
           destination: ./_site
+      
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
