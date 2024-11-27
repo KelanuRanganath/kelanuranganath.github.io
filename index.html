@@ -162,7 +162,7 @@
     <p>The first order correction to an anharmonic oscillator requires evaluating</p>
     <p>$$\langle \psi_n | x^k | \psi_j \rangle$$</p>
     <p>First we notice that if we expand $x^k = \gamma^k (a + a ^\dagger)^k$ then we can evaluate this by hand by drawing trees. It would be nice if we could instead have a formula for this.</p>
-    <p>$$\frac{k!\sqrt{n!j!}}{\sqrt{2^k}}\sum_{m=0}^{\left \lceil{\frac{k}{2}}\right \rceil}\frac{1}{2^m m!}\frac{1}{(s-n)!(s-j)!(s-k+2m)!}$$</p>
+    <p>$$\frac{k!\sqrt{n!j!}}{\sqrt{2^k}}\sum_{m=0}^{\left \lfloor{\frac{k}{2}}\right \rfloor}\frac{1}{2^m m!}\frac{1}{(s-n)!(s-j)!(s-k+2m)!}$$</p>
     <h4>Riesz Representation Theorem</h4>
     <h2 id="LuaLaTeX">LuaLaTeX</h2>
     <p>I am a big fan of LuaLaTeX, I've been using it to compile my LaTeX documents for close to two years now. In that time I've developed a set of scripts and enviroments that transform psuedo-code into well defined LaTeX macros for ease of use -nothing takes you out of the flow quite like aa curly bracket am I right fellas.</p>
