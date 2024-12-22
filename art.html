@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Calibri, sans-serif;
+        }
+
+	p {
+	    text-align: center;
+	}
+
+	canvas {
+	    position: fixed;
+	    z-index: -1;
+	    display:block;
+            top: 0;
+            left: 0;
+	}
+    </style>
+    <title>Kelanu's Website</title>
+    <script type="text/x-mathjax-config">
+	window.MathJax = {
+	  tex: {
+	    inlineMath: [['$', '$'], ['\\(', '\\)']]
+	  }
+	};
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <meta name="viewport" content="width=device-width">
+
+</head>
+<canvas id="canvas"></canvas>
+<script src="index.js"></script> 
+<body>
+    <div id="main">
+    <h2 id="Graphs">Desmos Graphs</h2>
+    <p>This graph shows some simple radar simulations.</p>
+    <iframe sandbox="allow-scripts allow-same-origin" loading="lazy" id="graph0" src="https://www.desmos.com/calculator/i9orq9vtsp?embed&expires=" + Date.now() width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+    <p>This one is a dirac comb.</p>
+    <iframe sandbox="allow-scripts allow-same-origin" loading="lazy" id="graph1" src="https://www.desmos.com/calculator/gwqkhh5ugs?embed&expires=" + Date.now() width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+	<p>This one is some polar art.</p>
+	<iframe sandbox="allow-scripts allow-same-origin" loading="lazy" id="graph2" src="https://www.desmos.com/calculator/vtlqc9agna?embed&expires=" + Date.now() width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+	<p>This one is more polar art.</p>
+	<iframe sandbox="allow-scripts allow-same-origin" loading="lazy" id="graph3" src="https://www.desmos.com/calculator/zmsw7ihe5k?embed&expires=" + Date.now() width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+	<p>This one uses the Lambert W function to model an emmiter follower circuit.</p>
+	<iframe sandbox="allow-scripts allow-same-origin" loading="lazy" id="graph4" src="https://www.desmos.com/calculator/9rjfsaefjk?embed&expires=" + Date.now() width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+    <h2 id="Art">Art</h2>
+    <iframe src="https://www.behance.net/embed/project/111080613?ilo0=1" height="316" width="404" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>
+
+</body>
+</html>

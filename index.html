@@ -8,7 +8,15 @@
         }
 
 	p {
-	  text-align: center;
+	    text-align: center;
+	}
+
+	canvas {
+	    position: fixed;
+	    z-index: -1;
+	    display:block;
+            top: 0;
+            left: 0;
 	}
     </style>
     <title>Kelanu's Website</title>
@@ -22,19 +30,20 @@
     <script type="text/javascript" id="MathJax-script" async
             src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <meta name="viewport" content="width=device-width">
+
 </head>
+<canvas id="canvas"></canvas>
+<script src="tile.js"></script> 
 <body>
+    <div id="main">
     <h1>Hello! This is Kelanu's Website</h1>
     <h4>Table of contents</h4>
     <ul>
 	    <li><a href="#About_me">About Me</a></li>
 	    <li><a href="#Interesting_Formulas">Interesting Formulas</a></li>
-	    <li><a href="#Publications">Publications</a></li>
-	    <li><a href="#LuaLaTeX">Lua LaTeX</a></li>
-	    <li><a href="#Art">Art</a></li>
-	    <li><a href="#Graphs">Graphs</a></li>
-	    <li><a href="#Climbing">Climbing</a></li>
-	    <li><a href="#Snowboarding">Snowboarding</a></li>
+	    <li><a href="publications.html">Publications and Awards</a></li>
+	    <li><a href="art.html">Art and Graphs</a></li>
+	    <li><a href="outside.html">Climbing, Snowboarding and Slacklining</a></li>
 	    <li><a href="#Solutions">Solutions to Selected Problems</a></li>
     </ul>
 
@@ -132,10 +141,8 @@
 
     <p> I am currently taking:</p>
     <ul>
-	<li> Physics 245: Quantum Computing</li>
-	<li> Physics 140A: Solid State Physics</li>
-	<li> Physics 115B: Quantum Mechanics</li>
-	<li> Phyiscs 112: Thermal Physics</li>
+	<li> Physics 115C: Quantum Mechanics</li>
+	<li> Physics 180Q: Quantum Optics</li>
     </ul>
 
     <p>I have a <a href="https://docs.google.com/spreadsheets/d/1SD-rPmPTdpTrKBsbUuWacUUzBlcs3659mBXzg78YVXg/edit?usp=sharing">spreadsheet</a> of every TV show and movie I have or plan on seeing; feel free to add comments.</p>
@@ -164,6 +171,7 @@
     <p>First we notice that if we expand $x^k = \gamma^k (a + a ^\dagger)^k$ then we can evaluate this by hand by drawing trees. It would be nice if we could instead have a formula for this.</p>
     <p>$$\frac{k!\sqrt{n!j!}}{\sqrt{2^k}}\sum_{m=0}^{\left \lfloor{\frac{k}{2}}\right \rfloor}\frac{1}{2^m m!}\frac{1}{(s-n)!(s-j)!(s-k+2m)!}$$</p>
     <h4>Riesz Representation Theorem</h4>
+    <h4>Gelfand Triple</h4>
     <h2 id="LuaLaTeX">LuaLaTeX</h2>
     <p>I am a big fan of LuaLaTeX, I've been using it to compile my LaTeX documents for close to two years now. In that time I've developed a set of scripts and enviroments that transform psuedo-code into well defined LaTeX macros for ease of use -nothing takes you out of the flow quite like aa curly bracket am I right fellas.</p>
 
@@ -173,31 +181,7 @@
     <p>These are selected problems from Physics 245 at UCLA with Professor Hudson. A lot of the problems are computational and use a package called QuTip. I've selected some of the non-QuTip problems that I think have an interesting solution.</p>
     <h4>"Ramsey" spectroscopy with a QHO?!</h4>
     <p>Suppose at $t=0$ a vacuum state is displaced by a displacement operator with $\alpha = 1$. Then after a variable time $t_w$ a second displacement operator with $\alpha = -1$ is applied. Plot the probability of being in the vacuum state as a function of $t_w$, assume that $m=1kg$ and $\omega=2\pi$.</p> 
-    <h3>QFT And Condensed Matter</h3>
-    <p>Professor Shankar's textbook "Principles of Quantum Mechanics" is a classic in graduate level quantum mechanics along side Sakurai. Recently (2017) he published another banger, "Quantum Field Theory And Condensed Matter An Introduction." So here are some solutions to the exercises in the first chapter.</p>
-    <h2 id="Graphs">Desmos Graphs</h2>
-    <p>This graph shows some simple radar simulations.</p>
-    <iframe sandbox="allow-scripts allow-same-origin" loading="lazy" id="graph0" src="https://www.desmos.com/calculator/i9orq9vtsp?embed&expires=" + Date.now() width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
-    <p>This one is a dirac comb.</p>
-    <iframe sandbox="allow-scripts allow-same-origin" loading="lazy" id="graph1" src="https://www.desmos.com/calculator/gwqkhh5ugs?embed&expires=" + Date.now() width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
-	<p>This one is some polar art.</p>
-	<iframe sandbox="allow-scripts allow-same-origin" loading="lazy" id="graph2" src="https://www.desmos.com/calculator/vtlqc9agna?embed&expires=" + Date.now() width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
-	<p>This one is more polar art.</p>
-	<iframe sandbox="allow-scripts allow-same-origin" loading="lazy" id="graph3" src="https://www.desmos.com/calculator/zmsw7ihe5k?embed&expires=" + Date.now() width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
-	<p>This one uses the Lambert W function to model an emmiter follower circuit.</p>
-	<iframe sandbox="allow-scripts allow-same-origin" loading="lazy" id="graph4" src="https://www.desmos.com/calculator/9rjfsaefjk?embed&expires=" + Date.now() width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
-    <h2 id="Art">Art</h2>
-    <iframe src="https://www.behance.net/embed/project/111080613?ilo0=1" height="316" width="404" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>
-    <h2 id="Climbing">Climbing At UCLA</h2>
-    <p>I started climbing in 2022. I quickly found that in the absence of rocks there were routes scattered around campus. There used to be a Mountain Project for UCLA, the routes and images were taken down sometime in 2023. I saved most of them and re-uploaded the routes and added several new ones to a Google Map.</p>
 
-    <iframe loading="lazy" sandbox="allow-scripts allow-same-origin" src="https://www.google.com/maps/d/u/0/embed?mid=1Sy0SS4mOlrUor0m0rCbWUgf1ngMQjmA&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
-    <h2 id="Snowboarding">Snowboarding</h2>
-	<p>I like snowboarding.</p>	
-    	<img src="assets/Snowboarding.jpg" width="300">
-    <h2 id="Publications">Publications</h2>
-	<ul>
-		<li><a href="https://arxiv.org/abs/2408.04082">Design, Construction, and Test of Compact, Distributed-Charge, X-Band Accelerator Systems that Enable Image-Guided, VHEE FLASH Radiotherapy</a>	
-	</ul>
+</div>
 </body>
 </html>
