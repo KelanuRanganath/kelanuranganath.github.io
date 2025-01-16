@@ -1,0 +1,59 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* Prevent body scrolling */
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+}
+
+#header {
+  background-color: #ccc;
+  padding: 10px;
+  text-align: center;
+  height: 60px;
+  flex-shrink: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#main {
+  display: flex;
+  flex: 1;
+  margin-top: 60px; /* Offset for fixed header */
+}
+
+#sidebar-left, #sidebar-right {
+  background-color: #f0f0f0;
+  width: 200px;
+  padding: 10px;
+  flex-shrink: 0;
+  height: calc(100vh - 60px); /* Full height minus header */
+  position: fixed;
+  overflow-y: auto; /* Scroll if content overflows */
+}
+
+#sidebar-left {
+  left: 0;
+}
+
+#sidebar-right {
+  right: 0;
+}
+
+#content {
+  background-color: #fff;
+  flex: 1;
+  margin-left: 200px; /* Offset for left sidebar */
+  margin-right: 200px; /* Offset for right sidebar */
+  padding: 10px;
+  overflow-y: auto; /* Enable scrolling for content */
+  height: calc(100vh - 60px); /* Full height minus header */
+}
