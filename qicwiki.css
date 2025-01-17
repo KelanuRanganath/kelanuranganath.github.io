@@ -32,7 +32,6 @@ body, html {
 
 #sidebar-left, #sidebar-right {
   background-color: #f0f0f0;
-  width: 200px;
   padding: 10px;
   flex-shrink: 0;
   height: calc(100vh - 60px); /* Full height minus header */
@@ -42,6 +41,7 @@ body, html {
 
 #sidebar-left {
   left: 0;
+  width: 
 }
 
 #sidebar-right {
